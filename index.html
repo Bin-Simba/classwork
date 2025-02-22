@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin Simba - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add jsPDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-wrapper">
+        <div class="logo">BS</div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container centered">
+            <div class="hero-content">
+                <div class="profile-pic">
+                    <div class="ellipse-container">
+                        <img src="./images/BEST.jpg" alt="Bin Simba">
+                    </div>
+                </div>
+                <h1 class="typing-effect">Hello, I'm Bin Simba</h1>
+                <p class="profession-text">
+                    I'm a <span id="typing-text"></span>
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View Work</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="static-text">I am a dedicated Web Developer with a strong foundation in modern web technologies. 
+                       My focus is on creating efficient, scalable, and user-friendly web applications. 
+                       With expertise in both frontend and backend development, I strive to deliver 
+                       high-quality solutions that meet client needs and exceed expectations.</p>
+                    <div class="stats static-stats">
+                        <div class="stat-item">
+                            <h3>1+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>2+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>2+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Resume Section -->
+    <section id="resume" class="section">
+        <div class="container">
+            <h2>Resume</h2>
+            <div class="simple-resume">
+                <div class="resume-card education">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="resume-item">
+                        <h4>Muteesa I Royal University</h4>
+                        <p class="duration">2020 - 2024</p>
+                        <p>Bachelor of Computer Science</p>
+                        <ul>
+                            <li>Major: Software Engineering</li>
+                            <li>GPA: 4.5/5.0</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-card experience">
+                    <h3><i class="fas fa-briefcase"></i> Experience</h3>
+                    <div class="resume-item">
+                        <h4>Web Developer - Roofings Group</h4>
+                        <p class="duration">2023 - Present</p>
+                        <ul>
+                            <li>Developed company's delivery system</li>
+                            <li>Improved website performance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-card skills">
+                    <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                    <div class="resume-item">
+                        <ul class="skills-list">
+                            <li data-skill="HTML5" data-percent="90">
+                                <i class="fab fa-html5"></i>
+                                HTML5
+                                <div class="skill-bar">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </li>
+                            <li data-skill="CSS3" data-percent="85">
+                                <i class="fab fa-css3-alt"></i>
+                                CSS3
+                                <div class="skill-bar">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </li>
+                            <li data-skill="JavaScript" data-percent="80">
+                                <i class="fab fa-js"></i>
+                                JavaScript
+                                <div class="skill-bar">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </li>
+                            <li data-skill="React" data-percent="75">
+                                <i class="fab fa-react"></i>
+                                React.js
+                                <div class="skill-bar">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </li>
+                            <li data-skill="Node.js" data-percent="70">
+                                <i class="fab fa-node-js"></i>
+                                Node.js
+                                <div class="skill-bar">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </li>
+                            <li data-skill="MongoDB" data-percent="75">
+                                <i class="fas fa-database"></i>
+                                MongoDB
+                                <div class="skill-bar">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </li>
+                            <li data-skill="Git" data-percent="85">
+                                <i class="fab fa-git-alt"></i>
+                                Git
+                                <div class="skill-bar">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-download">
+                    <a href="data:application/pdf;base64,YOUR_BASE64_PDF" 
+                       class="btn primary" 
+                       download="BinSimba_Resume.pdf"
+                       id="downloadBtn">
+                        <i class="fas fa-download"></i> Download Full Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill" data-progress="90">
+                    <h3>Web Development <span class="percentage">90%</span></h3>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <p>HTML, CSS, JavaScript, React</p>
+                </div>
+
+                <div class="skill" data-progress="85">
+                    <h3>Database <span class="percentage">85%</span></h3>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <p>MySQL, MongoDB, PostgreSQL</p>
+                </div>
+
+                <div class="skill" data-progress="80">
+                    <h3>Version Control <span class="percentage">80%</span></h3>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <p>Git, GitHub, GitLab</p>
+                </div>
+
+                <div class="skill" data-progress="75">
+                    <h3>Problem Solving <span class="percentage">75%</span></h3>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <p>Algorithms, Data Structures</p>
+                </div>
+
+                <div class="skill" data-progress="85">
+                    <h3>UI/UX Design <span class="percentage">85%</span></h3>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <p>Figma, Adobe XD</p>
+                </div>
+
+                <div class="skill" data-progress="82">
+                    <h3>Backend Dev <span class="percentage">82%</span></h3>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <p>Node.js, Express, APIs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./images/bestie.jpg" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>Project One</h3>
+                    <p>A web application built with React and Node.js</p>
+                    <div class="project-links">
+                        <a href="https://quiet-sable-240c9c.netlify.app" class="btn-small">Live Demo</a>
+                        <a href="https://github.com/Bin-Simba" class="btn-small">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>shariifbinisimba@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+256 701510339</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Bin-Simba"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shariif-binisimba-b10b00350"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/shryluv"><i class="fab fa-twitter"></i></a>
+                    <a href="https://wa.me/256774167709" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://t.me/username" target="_blank"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+            <form id="contact-form" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bin Simba. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
